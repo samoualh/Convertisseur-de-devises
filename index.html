@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Convertisseur de devises</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Convertisseur de devises</h1>
+    <form>
+      <input type="number" id="amount" placeholder="Montant à convertir" required>
+      <div>
+        <label for="from-currency">De :</label>
+        <select id="from-currency"></select>
+        <span>→</span>
+        <label for="to-currency">À :</label>
+        <select id="to-currency"></select>
+      </div>
+      <button type="button" id="convert-btn">Convertir</button>
+      <button type="button" id="reset-btn">Réinitialiser</button>
+    </form>
+
+    <div id="result"></div>
+    <div id="spinner" class="spinner"></div>
+    <button id="toggle-theme">Changer de thème</button>
+
+    <div id="history">
+      <h2>Historique des conversions</h2>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
